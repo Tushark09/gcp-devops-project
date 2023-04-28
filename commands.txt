@@ -1,0 +1,2 @@
+docker build -t myflaskapp .
+docker run -p 5001:5000 myflaskapp
