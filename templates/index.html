@@ -6,9 +6,11 @@
   </head>
   <body>
     <h1>Will you marry me?</h1>
-    <form action="/answer" method="POST">
-      <input type="radio" name="answer" value="YES"> Yes<br>
-      <input type="radio" name="answer" value="NO"> No<br>
+    <form action="{{ url_for('answer') }}" method="post">
+      <input type="radio" name="answer" value="yes" id="yes"><label for="yes">Yes</label><br>
+      <input type="radio" name="answer" value="no" id="no"><label for="no">No</label><br>
+      <input type="radio" name="answer" value="maybe" id="maybe"><label for="maybe">Maybe</label><br>
+      <input type="radio" name="answer" value="not sure" id="not-sure"><label for="not-sure">Not sure</label><br>
       <input type="submit" value="Submit">
     </form>
   </body>
